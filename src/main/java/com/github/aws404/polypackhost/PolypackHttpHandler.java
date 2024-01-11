@@ -28,7 +28,7 @@ public class PolypackHttpHandler implements HttpHandler {
             OutputStream outputStream = exchange.getResponseBody();
             File pack = PolypackHostMod.POLYMER_PACK_FILE.toFile();
 
-            exchange.getResponseHeaders().add("User-Agent", "Java/polypack-host");
+            exchange.getResponseHeaders().add("User-Agent", "Java/Minecraft");
             exchange.sendResponseHeaders(200, pack.length());
 
             FileInputStream fis = new FileInputStream(pack);
